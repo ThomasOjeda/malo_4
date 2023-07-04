@@ -1,0 +1,10 @@
+<div class="task-name-form">
+  <app-add-task-input
+    (valueChangedEvent)="handleInputChange($event)"
+    class="add-task-input-container simple-border-style"
+  ></app-add-task-input>
+  <app-custom-button
+    (clickedButtonEvent)="handleButtonClick()"
+    class="add-task-btn-container simple-border-style"
+  ></app-custom-button>
+</div>

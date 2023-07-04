@@ -1,0 +1,17 @@
+.task-list-cont {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.simple-border-style {
+  border: solid;
+  border-radius: 0px;
+  border-width: 3px;
+}

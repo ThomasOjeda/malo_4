@@ -1,0 +1,9 @@
+<div class="task simple-border-style">
+  <app-checkbox (checkboxEvent)="receiveCheckedEvent($event)"></app-checkbox>
+  <app-task-name [styleTask]="checked" class="task-name-container">
+    <ng-content></ng-content>
+  </app-task-name>
+  <app-delete-button
+    (buttonClickedEvent)="handleDeleteButtonClick()"
+  ></app-delete-button>
+</div>

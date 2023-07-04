@@ -1,0 +1,19 @@
+.task-name-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.add-task-btn-container {
+  box-sizing: border-box;
+  height: 40px;
+  flex: 1;
+}
+
+.add-task-input-container {
+  box-sizing: border-box;
+  height: 40px;
+  width: 65%;
+  margin-right: 5px;
+}
