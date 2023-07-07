@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-custom-button',
@@ -7,7 +7,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class CustomButtonComponent {
   @Output() clickedButtonEvent = new EventEmitter();
-
+  @Input() iconPath: string = '';
+  @Input() iconAlt: string = '';
   buttonWasClicked() {
     this.clickedButtonEvent.emit();
   }

@@ -1,6 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-.simple-border-style {
-  border: solid;
-  border-radius: 0px;
-  border-width: 3px;
+@import url("./colors.scss");
+
+:root {
+  --element-color: var(--black-10);
+  --icon-color: var(--black);
+  --text-color: var(--black);
+  --border-color: var(--black);
+  --background-color: var(--white);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --element-color: var(--white-10);
+    --icon-color: var(--white);
+    --text-color: var(--white);
+    --border-color: var(--white);
+    --background-color: var(--black);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

@@ -1,6 +1,9 @@
-.task-name {
-  width: 100%;
-}
 .line-through-decoration {
   text-decoration: line-through;
+}
+
+.task-name {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  word-break: break-all;
 }

@@ -1,0 +1,13 @@
+@import url("../../../styles.scss");
+
+:host {
+  display: block; //By default angular does not give a component a display value and
+  // the browser defaults to inline which does not allow width modification
+  width: 100%;
+}
+.divider {
+  height: 0.125rem;
+  margin: 1rem 0;
+  border: none;
+  background-color: var(--element-color);
+}

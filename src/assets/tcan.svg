@@ -9,6 +9,14 @@ Created by potrace 1.16, written by Peter Selinger 2001-2019
 </metadata>
 <g transform="translate(0.000000,302.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
+   <style>
+        path {
+            fill: black;
+        }
+        @media (prefers-color-scheme: dark) {
+            path { fill: white; }
+        }
+    </style>
 <path d="M850 2920 l0 -80 -417 -2 -418 -3 -3 -167 -2 -168 85 0 85 0 2 -1122
 3 -1123 27 -57 c35 -74 103 -141 176 -170 l57 -23 905 0 905 0 67 33 c80 39
 139 102 168 178 20 54 20 73 20 1169 l0 1115 65 0 65 0 0 170 0 170 -395 0
