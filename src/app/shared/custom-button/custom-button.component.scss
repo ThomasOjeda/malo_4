@@ -1,4 +1,4 @@
-@import url("../../../styles.scss");
+@import "../../../styles.scss";
 
 .btn {
   box-sizing: border-box;
@@ -10,10 +10,9 @@
   justify-content: center;
 
   background: none;
-  border: 0.0625rem solid var(--border-color);
+  border: 0.0625rem solid;
   border-radius: 0.25rem;
-  color: var(--text-color);
-
+  @include theme("button");
   cursor: pointer;
 }
 

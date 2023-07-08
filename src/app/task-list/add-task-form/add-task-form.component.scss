@@ -1,6 +1,6 @@
-@import url("../../../styles.scss");
+@import "../../../styles.scss";
 
-:host {
+form {
   position: sticky;
   top: 2rem;
   padding: 0.5rem;
@@ -10,8 +10,7 @@
   justify-content: space-between;
   gap: 0.5rem;
   border-radius: 0.25rem;
-  background-color: var(--element-color);
-  backdrop-filter: blur(0.5rem);
+  @include theme("task-form");
 }
 
 .add-task-input-container {

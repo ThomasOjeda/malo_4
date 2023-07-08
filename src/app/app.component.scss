@@ -1,14 +1,13 @@
 .header {
-  max-width: 32rem;
-  font-size: 2.25rem;
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
 }
 
-.todo-list {
+.section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .task-list {

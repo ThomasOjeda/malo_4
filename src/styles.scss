@@ -1,27 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
-@import url("./colors.scss");
+@import "./colors";
 
-:root {
-  --element-color: var(--black-10);
-  --icon-color: var(--black);
-  --text-color: var(--black);
-  --border-color: var(--black);
-  --background-color: var(--white);
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --element-color: var(--white-10);
-    --icon-color: var(--white);
-    --text-color: var(--white);
-    --border-color: var(--white);
-    --background-color: var(--black);
+
+/* @mixin style() {
+  border-style: dashed;
+}
+ */
+@mixin theme($element) {
+  @if $element == "button" {
+    border-color: color("black");
+    /*     @include style();
+ */
   }
+  @if $element == "body" {
+    background-color: color("white");
+    color: color("black");
+  }
+  @if $element == "task" {
+    background-color: color("black-10");
+  }
+  @if $element == "task-form" {
+    background-color: color("black-10");
+    backdrop-filter: blur(0.5rem);
+  }
+  @if $element == "task-input" {
+    color: color("black");
+  }
+  @if $element == "divider" {
+    background-color: color("black-10");
+  }
+  @media (prefers-color-scheme: dark) {
+    @if $element == "button" {
+      border-color: color("white");
+    }
+    @if $element == "body" {
+      background-color: color("black");
+      color: color("white");
+    }
+    @if $element == "task" {
+      background-color: color("white-10");
+    }
+    @if $element == "task-form" {
+      background-color: color("white-10");
+    }
+    @if $element == "task-input" {
+      color: color("white");
+    }
+    @if $element == "divider" {
+      background-color: color("white-10");
+    }
+  }
+}
+
+@mixin margins() {
+  margin: 0 1.5rem;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  @include theme("body");
 }

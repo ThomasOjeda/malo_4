@@ -1,5 +1,8 @@
-.task-list-header {
-  text-align: center;
+@import "../../../styles.scss";
 
+.task-list-header {
+  max-width: 32rem;
+  font-size: 2.25rem;
+  text-align: center;
   font-weight: normal;
 }

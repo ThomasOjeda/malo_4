@@ -11,7 +11,8 @@ export class AddTaskFormComponent {
   handleInputChange(newValue: string) {
     this.newTaskName = newValue;
   }
-  handleButtonClick() {
+  handleButtonClick($event: Event) {
+    $event.preventDefault();
     this.addTaskEvent.emit(this.newTaskName);
   }
 }

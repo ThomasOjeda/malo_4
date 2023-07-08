@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.scss'],
 })
 export class ListComponent {
-  taskList: any[] = [];
+  taskList: any[] = [
+    {
+      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      checked: false,
+    },
+  ];
 
   addTask(task: string) {
     if (task) {

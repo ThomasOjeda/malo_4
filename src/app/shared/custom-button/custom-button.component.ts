@@ -9,7 +9,7 @@ export class CustomButtonComponent {
   @Output() clickedButtonEvent = new EventEmitter();
   @Input() iconPath: string = '';
   @Input() iconAlt: string = '';
-  buttonWasClicked() {
-    this.clickedButtonEvent.emit();
+  buttonWasClicked($event: Event) {
+    this.clickedButtonEvent.emit($event);
   }
 }

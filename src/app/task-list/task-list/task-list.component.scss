@@ -1,4 +1,4 @@
-@import url("../../../styles.scss");
+@import "../../../styles.scss";
 
 :host {
   display: block; //By default angular does not give a component a display value and
@@ -9,5 +9,5 @@
   height: 0.125rem;
   margin: 1rem 0;
   border: none;
-  background-color: var(--element-color);
+  @include theme("divider");
 }
