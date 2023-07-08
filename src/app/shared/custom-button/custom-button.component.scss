@@ -4,14 +4,11 @@
   box-sizing: border-box;
   height: 3rem;
   width: 3rem;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include padding;
+  @include center-x-y();
 
   background: none;
-  border: 0.0625rem solid;
-  border-radius: 0.25rem;
+  @include visible-borders();
   @include theme("button");
   cursor: pointer;
 }

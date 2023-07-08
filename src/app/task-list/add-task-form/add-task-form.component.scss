@@ -1,15 +1,15 @@
 @import "../../../styles.scss";
 
-form {
+:host {
   position: sticky;
   top: 2rem;
-  padding: 0.5rem;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+form {
+  @include padding();
+  @include center-x-y($justify: space-between);
   gap: 0.5rem;
-  border-radius: 0.25rem;
+  @include invisible-borders();
   @include theme("task-form");
 }
 

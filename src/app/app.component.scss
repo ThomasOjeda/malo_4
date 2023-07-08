@@ -1,15 +1,15 @@
+@import "../styles.scss";
+
 .header {
-  display: flex;
-  justify-content: center;
+  @include center-x-y();
   padding: 0 1.5rem;
 }
 
 .section {
-  display: flex;
-  justify-content: center;
+  @include center-x-y();
   padding: 0 1.5rem;
 }
 
 .task-list {
-  max-width: 32rem;
+  @include max-width();
 }
