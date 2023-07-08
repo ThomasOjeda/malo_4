@@ -8,7 +8,7 @@ import { TaskComponent } from './task-list/task/task.component';
 import { TaskNameComponent } from './task-list/task/task-name/task-name.component';
 import { CheckboxComponent } from './task-list/task/checkbox/checkbox.component';
 import { AddTaskInputComponent } from './add-task-form/add-task-input/add-task-input.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AddTaskFormComponent,
@@ -19,7 +19,7 @@ import { AddTaskInputComponent } from './add-task-form/add-task-input/add-task-i
     CheckboxComponent,
     AddTaskInputComponent,
   ],
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule, FormsModule],
   exports: [TaskListComponent],
 })
 export class TaskListModule {}

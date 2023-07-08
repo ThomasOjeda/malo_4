@@ -8,99 +8,35 @@ import { Component } from '@angular/core';
 export class ListComponent {
   taskList: any[] = [
     {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      taskName: 'Task 1',
+      checked: true,
+    },
+    {
+      taskName: 'Task 2',
       checked: false,
     },
     {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      taskName: 'Task 3',
       checked: false,
     },
     {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      taskName: 'Task 4',
+      checked: true,
+    },
+    {
+      taskName: 'Task 5',
+      checked: true,
+    },
+    {
+      taskName: 'Task 6',
       checked: false,
     },
     {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      taskName: 'Task 7',
       checked: false,
     },
     {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-      checked: false,
-    },
-    {
-      taskName: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      taskName: 'Task 8',
       checked: false,
     },
   ];

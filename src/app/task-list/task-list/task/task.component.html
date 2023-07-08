@@ -1,4 +1,7 @@
-<app-checkbox (checkboxEvent)="receiveCheckedEvent($event)"></app-checkbox>
+<app-checkbox
+  [checked]="checked"
+  (checkboxEvent)="receiveCheckedEvent($event)"
+></app-checkbox>
 <app-task-name [styleTask]="checked" class="task-name-container">
   <ng-content></ng-content>
 </app-task-name>

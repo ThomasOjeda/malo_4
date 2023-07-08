@@ -12,7 +12,6 @@ export class AddTaskFormComponent {
     this.newTaskName = newValue;
   }
   handleButtonClick($event: Event) {
-    $event.preventDefault();
     this.addTaskEvent.emit(this.newTaskName);
   }
 }
